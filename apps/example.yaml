@@ -1,0 +1,34 @@
+id: /example
+labels:
+  owner: username
+  note: do my bidding
+uris:
+  - /usr/local/data/docker.tar.gz
+user: production
+cpus: 0.2
+mem: 512
+instances: 1
+container:
+  type: DOCKER
+  volumes:
+    - containerPath: /etc/localtime
+      hostPath: /etc/localtime
+      mode: RO
+  docker:
+    forcePullImage: false
+    network: HOST
+    parameters: []
+    portMappings: []
+    privileged: false
+    image: "mesosphere/inky:latest"
+cmd: sleep 3
+healthChecks:
+  - protocol: COMMAND
+    command:
+      value: /bin/true
+    gracePeriodSeconds: 3
+    intervalSeconds: 10
+    timeoutSeconds: 10
+    maxConsecutiveFailures: 3
+env:
+  LIBPROCESS_SSL_ENABLED: '1'

@@ -11,6 +11,7 @@
 To startup an [example app][2]:
 ```bash
 make APP=example deploy
+make APP=example undeploy
 ```
 
 ### Configuration

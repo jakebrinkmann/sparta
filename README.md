@@ -1,10 +1,10 @@
-# sparta
+# suburbs
 You will cross land and sea to do my bidding
 
 ## Requires:
 
+* running [marathon][3] host (`MARATHONHOST`)
 * curl, jq, cmake, python (PyYAML)
-* access to running marathon host (`MARATHONHOST`)
 
 ## Usage
 
@@ -24,3 +24,4 @@ MARATHONHOST ?= https://localhost:8080
 
 [1]: common.mk
 [2]: apps/example.yaml
+[3]: https://mesosphere.github.io/marathon/

@@ -13,7 +13,7 @@ gdeploy:
 
 .PHONY: undeploy
 undeploy:
-	curl -X DELETE $(MARATHON_CURL) $(MARATHONHOST)/v2/apps/$(APP)
+	curl -X DELETE $(MARATHON_CURL) $(MARATHONHOST)/v2/apps/$(APP) | jq .
 
 .PHONY: ungdeploy
 ungdeploy:

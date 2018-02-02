@@ -29,8 +29,16 @@ BASICAUTH ?= dXNlcm5hbWU6cGFzc3dvcmQ=
 MARATHONHOST ?= https://localhost:8080
 ```
 
+## References
+
+* More on [Marathon REST API][5]
+* More on [Application Deployments][6]
+
 
 [1]: common.mk
 [2]: apps/example.yaml
 [3]: https://mesosphere.github.io/marathon/
 [4]: groups/tools.yaml
+[5]: http://mesosphere.github.io/marathon/api-console/index.html
+[6]: https://mesosphere.github.io/marathon/docs/deployments.html
+

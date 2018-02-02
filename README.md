@@ -15,6 +15,12 @@ make APP=example deploy
 make APP=example undeploy
 ```
 
+Or, to startup many containers in a [group][4]:
+```bash
+make GROUP=tools gdeploy
+make GROUP=tools ungdeploy
+```
+
 ### Configuration
 
 Edit [common.mk][1]:
@@ -27,3 +33,4 @@ MARATHONHOST ?= https://localhost:8080
 [1]: common.mk
 [2]: apps/example.yaml
 [3]: https://mesosphere.github.io/marathon/
+[4]: groups/tools.yaml

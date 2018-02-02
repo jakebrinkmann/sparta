@@ -1,9 +1,10 @@
-# suburbs
-🚗 For those who would rather commute
+# Marathon Test Infrastructure
+
+Tools for managing application-clusters using [Marathon][3]
 
 ## Requires:
 
-* running [marathon][3] host (`MARATHONHOST`)
+* A running [marathon][3] host (`MARATHONHOST`)
 * curl, jq, cmake, python (PyYAML)
 
 ## Usage
